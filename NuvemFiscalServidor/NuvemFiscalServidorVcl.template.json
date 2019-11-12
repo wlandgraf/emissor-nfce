@@ -1,0 +1,39 @@
+{
+  "Producao": false, 
+  "BaseUrl": "http://+:2001/tms/nuvemfiscal/",
+  "JwtSecret": "seu-segredo-para-token-autenticacao",
+  "Emitente": {
+    "CNPJ": "12345678000199",
+	"InscricaoMunicipal": "",
+	"InscricaoEstadual": "00000000-00",
+	"RazaoSocial": "EMPRESA XPTO LTDA",
+	"Fantasia": "XPTO",
+	"Fone": "(11) 1111-1111",
+	"CEP": "11999000",	
+	"Logradouro": "R DAS EMISSOES",
+	"Numero": "999",
+	"Complemento": "",
+	"Bairro": "VILA SEFAZ",
+	"CodCidade": 3550308,
+	"Cidade": "SAO PAULO",
+	"UF": "SP"
+  },
+  "Certificado": {
+    "ArquivoPFX": "C:\\pasta\\arquivo-certificado.pfx",
+	"Senha": "SenhaCertificado",
+	"NumeroSerie": ""  
+  },
+  "NFCe": {
+	"PathSchemas": "C:\\nfe\\schemas",
+    "PathArquivos": "C:\\nfe\\ArquivosXML",
+	"DANFEFastFile": "C:\\nfe\\Report\\DANFeNFCe5_00.fr3",
+	"IdCSC": "1",
+    "CSC": "ACBDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+	"ResponsavelTecnicoEmissao": {
+	  "CNPJ": "123456780000199",
+	  "Contato": "Nome responsavel",
+	  "Email": "E-mail responsavel",
+	  "Fone": "11999999999"
+	}
+  }
+}

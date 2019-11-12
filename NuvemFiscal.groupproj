@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5CC3F21E-695F-4381-B9A4-33DFCA9847DF}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="NuvemFiscalServidor\NuvemFiscalServidorVcl.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NuvemFiscalClienteVcl\NuvemFiscalClienteVcl.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GeradorToken\GeradorToken.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="NuvemFiscalServidorVcl">
+        <MSBuild Projects="NuvemFiscalServidor\NuvemFiscalServidorVcl.dproj"/>
+    </Target>
+    <Target Name="NuvemFiscalServidorVcl:Clean">
+        <MSBuild Projects="NuvemFiscalServidor\NuvemFiscalServidorVcl.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NuvemFiscalServidorVcl:Make">
+        <MSBuild Projects="NuvemFiscalServidor\NuvemFiscalServidorVcl.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NuvemFiscalClienteVcl">
+        <MSBuild Projects="NuvemFiscalClienteVcl\NuvemFiscalClienteVcl.dproj"/>
+    </Target>
+    <Target Name="NuvemFiscalClienteVcl:Clean">
+        <MSBuild Projects="NuvemFiscalClienteVcl\NuvemFiscalClienteVcl.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NuvemFiscalClienteVcl:Make">
+        <MSBuild Projects="NuvemFiscalClienteVcl\NuvemFiscalClienteVcl.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GeradorToken">
+        <MSBuild Projects="GeradorToken\GeradorToken.dproj"/>
+    </Target>
+    <Target Name="GeradorToken:Clean">
+        <MSBuild Projects="GeradorToken\GeradorToken.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GeradorToken:Make">
+        <MSBuild Projects="GeradorToken\GeradorToken.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="NuvemFiscalServidorVcl;NuvemFiscalClienteVcl;GeradorToken"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="NuvemFiscalServidorVcl:Clean;NuvemFiscalClienteVcl:Clean;GeradorToken:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="NuvemFiscalServidorVcl:Make;NuvemFiscalClienteVcl:Make;GeradorToken:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
