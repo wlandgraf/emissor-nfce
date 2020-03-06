@@ -803,6 +803,6 @@ begin
 end;
 
 initialization
-  LibXmlInit;
+  InitLibXml2Interface;
 
 end.
