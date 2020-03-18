@@ -1,6 +1,6 @@
 {
   "Producao": false, 
-  "BaseUrl": "http://+:2001/tms/nuvemfiscal/",
+  "BaseUrl": "http://+:2001/tms/nuvemfiscal/nfce/",
   "JwtSecret": "seu-segredo-para-token-autenticacao",
   "Emitente": {
     "CNPJ": "12345678000199",

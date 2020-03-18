@@ -27,7 +27,7 @@ uses
   ClientVcl.LogForm;
 
 const
-  cUriServidor = 'http://localhost:2001/tms/nuvemfiscal';
+  cUriServidor = 'http://localhost:2001/tms/nuvemfiscal/nfce';
   cJwtAuthToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzA3NTM0MjAsImV4cCI6MjU1MTczOTAyMH0.HC-1z6F5PmoODxf2JGwQDqXSN51_25zdvYo8Cpd5K00';
 
 type
