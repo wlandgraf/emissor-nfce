@@ -1,4 +1,4 @@
-program NuvemFiscalServidorVcl;
+program EmissorNFCeServidorVcl;
 
 {$WARN DUPLICATE_CTOR_DTOR OFF}
 

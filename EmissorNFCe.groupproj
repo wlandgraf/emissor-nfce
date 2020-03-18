@@ -3,10 +3,10 @@
         <ProjectGuid>{5CC3F21E-695F-4381-B9A4-33DFCA9847DF}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="NuvemFiscalServidor\NuvemFiscalServidorVcl.dproj">
+        <Projects Include="EmissorNFCeServidorVcl\EmissorNFCeServidorVcl.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="NuvemFiscalClienteVcl\NuvemFiscalClienteVcl.dproj">
+        <Projects Include="EmissorNFCeClienteVcl\EmissorNFCeClienteVcl.dproj">
             <Dependencies/>
         </Projects>
         <Projects Include="GeradorToken\GeradorToken.dproj">
@@ -20,23 +20,23 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="NuvemFiscalServidorVcl">
-        <MSBuild Projects="NuvemFiscalServidor\NuvemFiscalServidorVcl.dproj"/>
+    <Target Name="EmissorNFCeServidorVcl">
+        <MSBuild Projects="EmissorNFCeServidorVcl\EmissorNFCeServidorVcl.dproj"/>
     </Target>
-    <Target Name="NuvemFiscalServidorVcl:Clean">
-        <MSBuild Projects="NuvemFiscalServidor\NuvemFiscalServidorVcl.dproj" Targets="Clean"/>
+    <Target Name="EmissorNFCeServidorVcl:Clean">
+        <MSBuild Projects="EmissorNFCeServidorVcl\EmissorNFCeServidorVcl.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="NuvemFiscalServidorVcl:Make">
-        <MSBuild Projects="NuvemFiscalServidor\NuvemFiscalServidorVcl.dproj" Targets="Make"/>
+    <Target Name="EmissorNFCeServidorVcl:Make">
+        <MSBuild Projects="EmissorNFCeServidorVcl\EmissorNFCeServidorVcl.dproj" Targets="Make"/>
     </Target>
-    <Target Name="NuvemFiscalClienteVcl">
-        <MSBuild Projects="NuvemFiscalClienteVcl\NuvemFiscalClienteVcl.dproj"/>
+    <Target Name="EmissorNFCeClienteVcl">
+        <MSBuild Projects="EmissorNFCeClienteVcl\EmissorNFCeClienteVcl.dproj"/>
     </Target>
-    <Target Name="NuvemFiscalClienteVcl:Clean">
-        <MSBuild Projects="NuvemFiscalClienteVcl\NuvemFiscalClienteVcl.dproj" Targets="Clean"/>
+    <Target Name="EmissorNFCeClienteVcl:Clean">
+        <MSBuild Projects="EmissorNFCeClienteVcl\EmissorNFCeClienteVcl.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="NuvemFiscalClienteVcl:Make">
-        <MSBuild Projects="NuvemFiscalClienteVcl\NuvemFiscalClienteVcl.dproj" Targets="Make"/>
+    <Target Name="EmissorNFCeClienteVcl:Make">
+        <MSBuild Projects="EmissorNFCeClienteVcl\EmissorNFCeClienteVcl.dproj" Targets="Make"/>
     </Target>
     <Target Name="GeradorToken">
         <MSBuild Projects="GeradorToken\GeradorToken.dproj"/>
@@ -48,13 +48,13 @@
         <MSBuild Projects="GeradorToken\GeradorToken.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="NuvemFiscalServidorVcl;NuvemFiscalClienteVcl;GeradorToken"/>
+        <CallTarget Targets="EmissorNFCeServidorVcl;EmissorNFCeClienteVcl;GeradorToken"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="NuvemFiscalServidorVcl:Clean;NuvemFiscalClienteVcl:Clean;GeradorToken:Clean"/>
+        <CallTarget Targets="EmissorNFCeServidorVcl:Clean;EmissorNFCeClienteVcl:Clean;GeradorToken:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="NuvemFiscalServidorVcl:Make;NuvemFiscalClienteVcl:Make;GeradorToken:Make"/>
+        <CallTarget Targets="EmissorNFCeServidorVcl:Make;EmissorNFCeClienteVcl:Make;GeradorToken:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

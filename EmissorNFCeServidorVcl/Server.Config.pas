@@ -14,7 +14,7 @@ type
   TServerConfig = class
   strict private
     FProducao: Boolean;
-    FBaseUrl: string; // https://+:443/emissor/nfse
+    FBaseUrl: string; // https://+:443/emissor/nfce
     FJwtSecret: string;
     FEmitente: TEmitente;
     FCertificado: TCertificado;

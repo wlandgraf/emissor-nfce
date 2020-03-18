@@ -3,7 +3,7 @@ object ClientVclMainForm: TClientVclMainForm
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Nuvem Fiscal - PDV'
+  Caption = 'EmissorNFCe - PDV'
   ClientHeight = 566
   ClientWidth = 768
   Color = clBtnFace

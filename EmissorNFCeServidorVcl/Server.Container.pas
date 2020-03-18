@@ -55,7 +55,7 @@ implementation
 
 procedure TServerContainer.DataModuleCreate(Sender: TObject);
 begin
-  TXDataAureliusModel.Default.Title := 'Nuvem Fiscal API';
+  TXDataAureliusModel.Default.Title := 'Emissor NFCe API';
 end;
 
 procedure TServerContainer.StartServer(ABaseUrl: string; AJwtSecret: string);
@@ -65,7 +65,7 @@ begin
   FJwtSecret := AJwtSecret;
   XDataServer.BaseUrl := ABaseUrl;
   SparkleHttpSysDispatcher.Start;
-  LogManager.GetLogger.Info(Format('Servidor NuvemFiscal rodando no endereço "%s"', [XDataServer.BaseUrl]));
+  LogManager.GetLogger.Info(Format('Servidor EmissorNFCe rodando no endereço "%s"', [XDataServer.BaseUrl]));
 end;
 
 procedure TServerContainer.StopServer;
@@ -73,7 +73,7 @@ begin
   if not SparkleHttpSysDispatcher.Active then
     Exit;
   SparkleHttpSysDispatcher.Stop;
-  LogManager.GetLogger.Info('Servidor NuvemFiscal parado');
+  LogManager.GetLogger.Info('Servidor EmissorNFCe parado');
 end;
 
 procedure TServerContainer.XDataServerGenericRequest(Sender: TObject;

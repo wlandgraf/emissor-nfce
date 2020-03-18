@@ -71,3 +71,5 @@ __recovery/
 /NuvemFiscalServidor/NuvemFiscalServidorVcl.res
 /GeradorToken/GeradorToken.res
 /NuvemFiscalServidor/NuvemFiscalServidorVcl.ico
+/EmissorNFCeServidorVcl/EmissorNFCeServidorVcl.json
+/EmissorNFCeServidorVcl/EmissorNFCeServidorVcl.res

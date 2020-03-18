@@ -3,7 +3,7 @@
         <ProjectGuid>{365C8E2A-A384-436D-AE40-FA1D6FFFF8BC}</ProjectGuid>
         <ProjectVersion>18.7</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
-        <MainSource>NuvemFiscalServidorVcl.dpr</MainSource>
+        <MainSource>EmissorNFCeServidorVcl.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -57,7 +57,7 @@
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
-        <SanitizedProjectName>NuvemFiscalServidorVcl</SanitizedProjectName>
+        <SanitizedProjectName>EmissorNFCeServidorVcl</SanitizedProjectName>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
@@ -67,7 +67,7 @@
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
-        <Icon_MainIcon>NuvemFiscalServidorVcl_Icon.ico</Icon_MainIcon>
+        <Icon_MainIcon>EmissorNFCeServidorVcl.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;DBXDb2Driver;vclactnband;vclFireDAC;tethering;FireDACADSDriver;FireDACMSSQLDriver;vcltouch;vcldb;Intraweb;VCL_FlexCel_Components;vclib;NxDBGrid6Run_d10_2;NxCollection6Run_d10_2;FireDACDBXDriver;vclx;VCLRESTComponents;NxLayout6Run_d10_2;vclie;bindengine;FireDACMySQLDriver;DataSnapClient;bindcompdbx;DBXSybaseASEDriver;IndyIPServer;IndySystem;dsnapcon;FireDACMSAccDriver;fmxFireDAC;FireDACInfxDriver;vclimg;emshosting;TMSLoggingPkgCoreDXE11;TMSLoggingPkgFMXDXE11;DBXOdbcDriver;FireDACTDataDriver;FMXTee;DbxCommonDriver;xmlrtl;DataSnapNativeClient;fmxobj;rtl;DbxClientDriver;DBXSybaseASADriver;appanalytics;IndyIPClient;bindcompvcl;TeeUI;FMX_FlexCel_Components;VclSmp;FireDACODBCDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;FireDACMongoDBDriver;DataSnapServerMidas;DBXInterBaseDriver;FMX_FlexCel_Core;DBXMSSQLDriver;DatasnapConnectorsFreePascal;bindcompfmx;DBXOracleDriver;inetdb;TMSCryptoPkgDXE11;FmxTeeUI;emsedge;fmx;fmxdae;dbexpress;IndyCore;NxGrid6Run_d10_2;dsnap;DataSnapCommon;TMSLoggingPkgVCLDXE11;DataSnapConnectors;FireDACOracleDriver;DBXMySQLDriver;DBXFirebirdDriver;NxInspector6Run_d10_2;FireDACCommonODBC;IndyIPCommon;vcl;FireDACDb2Driver;TeeDB;FireDACPgDriver;ibmonitor;FireDACASADriver;ibxpress;Tee;DataSnapServer;ibxbindings;vclwinx;FireDACDSDriver;CustomIPTransport;vcldsnap;bindcomp;DBXInformixDriver;SynEdit_R;NxStandard6Run_d10_2;dbxcds;VCL_FlexCel_Core;adortl;dsnapxml;dbrtl;inetdbxpress;IndyProtocols;fmxase;$(DCC_UsePackage)</DCC_UsePackage>
@@ -83,11 +83,11 @@
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <VerInfo_Build>71</VerInfo_Build>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.71;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;LastCompiledTime=2019/10/08 17:49:23</VerInfo_Keys>
+        <VerInfo_Build>73</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.73;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;LastCompiledTime=2020/03/18 20:04:00</VerInfo_Keys>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Locale>1033</VerInfo_Locale>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
+        <Icon_MainIcon>EmissorNFCeServidorVcl.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -99,7 +99,7 @@
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <Icon_MainIcon>NuvemFiscalServidorVcl_Icon.ico</Icon_MainIcon>
+        <Icon_MainIcon>EmissorNFCeServidorVcl.ico</Icon_MainIcon>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -140,19 +140,18 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">NuvemFiscalServidorVcl.dpr</Source>
+                    <Source Name="MainSource">EmissorNFCeServidorVcl.dpr</Source>
                 </Source>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k260.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp260.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\_#Componentes#_\ACBr\Lib\Delphi\LibD26\Win32\ACBr_OpenSSL.bpl">ACBr - Bind para OpenSSL 1.1.1 - (http://www.projetoacbr.com.br/)</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\NuvemFiscalServidorVcl.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Win32\Debug\EmissorNFCeServidorVcl.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>NuvemFiscalServidorVcl.exe</RemoteName>
+                        <RemoteName>EmissorNFCeServidorVcl.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

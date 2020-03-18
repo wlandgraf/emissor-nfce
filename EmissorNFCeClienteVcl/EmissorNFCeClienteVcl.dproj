@@ -3,7 +3,7 @@
         <ProjectGuid>{EDFE4635-FDC8-4C0A-BB29-8FDFD029876C}</ProjectGuid>
         <ProjectVersion>18.7</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
-        <MainSource>NuvemFiscalClienteVcl.dpr</MainSource>
+        <MainSource>EmissorNFCeClienteVcl.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -58,7 +58,7 @@
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
-        <SanitizedProjectName>NuvemFiscalClienteVcl</SanitizedProjectName>
+        <SanitizedProjectName>EmissorNFCeClienteVcl</SanitizedProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;DBXDb2Driver;vclactnband;vclFireDAC;tethering;FireDACADSDriver;ACBr_BPeDabpeESCPOS;JvPluginSystem;ACBr_BPe;NxCollection6Dsgn_d10_2;FireDACMSSQLDriver;vcltouch;JvBands;ACBr_NFe;vcldb;Intraweb;svn;JvJans;SKIA_FlexCel_Core;ACBr_NFeDanfeESCPOS;JvDotNetCtrls;VCL_FlexCel_Components;vclib;NxDBGrid6Run_d10_2;NxCollection6Run_d10_2;FireDACDBXDriver;vclx;ACBr_Reinf;VCLRESTComponents;NxLayout6Run_d10_2;vclie;bindengine;JvHMI;FireDACMySQLDriver;ACBr_SATECFVirtual;DataSnapClient;bindcompdbx;ACBr_TCP;DBXSybaseASEDriver;IndyIPServer;ACBr_CTe;IndySystem;dsnapcon;ACBr_synapse;ACBre_Social;FireDACMSAccDriver;fmxFireDAC;FireDACInfxDriver;vclimg;Jcl;ACBr_MDFe;emshosting;TMSLoggingPkgCoreDXE11;TMSLoggingPkgFMXDXE11;DBXOdbcDriver;FireDACTDataDriver;FMXTee;DbxCommonDriver;JvManagedThreads;xmlrtl;DataSnapNativeClient;fmxobj;JvTimeFramework;rtl;DbxClientDriver;DBXSybaseASADriver;JvSystem;JvStdCtrls;appanalytics;IndyIPClient;bindcompvcl;TeeUI;FMX_FlexCel_Components;JvDocking;JvPascalInterpreter;VclSmp;FireDACODBCDriver;JclVcl;DataSnapIndy10ServerTransport;DataSnapProviderClient;FireDACMongoDBDriver;JvControls;JvPrintPreview;ACBr_NFSe;DataSnapServerMidas;DBXInterBaseDriver;FMX_FlexCel_Core;ACBr_TEFD;ACBr_SATWS;svnui;JvGlobus;DBXMSSQLDriver;JvMM;DatasnapConnectorsFreePascal;bindcompfmx;JvNet;DBXOracleDriver;inetdb;JvAppFrm;ACBr_Diversos;TMSCryptoPkgDXE11;FmxTeeUI;emsedge;fmx;fmxdae;JvWizards;dbexpress;IndyCore;NxLayout6Dsgn_d10_2;NxGrid6Run_d10_2;JvPageComps;dsnap;DataSnapCommon;JvDB;ACBr_PCNComum;TMSLoggingPkgVCLDXE11;DataSnapConnectors;ACBr_SAT;JclDeveloperTools;TMSWEBCorePkgDXE11;FireDACOracleDriver;DBXMySQLDriver;JvCmp;DBXFirebirdDriver;NxInspector6Run_d10_2;FireDACCommonODBC;ACBr_GNRE;NxInspector6Dsgn_d10_2;IndyIPCommon;JvCustom;vcl;JvXPCtrls;ACBr_SATExtratoESCPOS;FireDACDb2Driver;TMSWEBCorePkgLibDXE11;ACBr_Integrador;madExcept_;NxGrid6Dsgn_d10_2;madBasic_;TeeDB;JvCore;NxStandard6Dsgn_d10_2;ACBr_Comum;JvCrypt;FireDACPgDriver;ibmonitor;FireDACASADriver;JvDlgs;JvRuntimeDesign;ibxpress;Tee;DataSnapServer;ibxbindings;vclwinx;FireDACDSDriver;ACBr_OpenSSL;madDisAsm_;ACBr_DFeComum;CustomIPTransport;vcldsnap;bindcomp;ACBr_Serial;DBXInformixDriver;SynEdit_R;ACBr_BlocoX;NxStandard6Run_d10_2;dbxcds;VCL_FlexCel_Core;ACBr_NFCeECFVirtual;adortl;NxDBGrid6Dsgn_d10_2;ACBr_ANe;dsnapxml;dbrtl;inetdbxpress;IndyProtocols;TMSCryptoPkgDEDXE11;JclContainers;fmxase;$(DCC_UsePackage)</DCC_UsePackage>
@@ -83,8 +83,8 @@
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <VerInfo_Build>21</VerInfo_Build>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.21;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;LastCompiledTime=2019/10/14 19:17:58</VerInfo_Keys>
+        <VerInfo_Build>25</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.25;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;LastCompiledTime=2020/03/18 20:33:05</VerInfo_Keys>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
@@ -107,14 +107,14 @@
             <Form>ClientVclMainForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="..\NuvemFiscalServidor\nfce\NFCe.DTO.pas"/>
-        <DCCReference Include="..\NuvemFiscalServidor\nfce\NFCe.Service.Interfaces.pas"/>
-        <DCCReference Include="..\NuvemFiscalServidor\config\Config.DTO.pas"/>
-        <DCCReference Include="..\NuvemFiscalServidor\config\Config.Service.Interfaces.pas"/>
         <DCCReference Include="ClientVcl.LogForm.pas">
             <Form>ClientVclLogForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="..\EmissorNFCeServidorVcl\config\Config.DTO.pas"/>
+        <DCCReference Include="..\EmissorNFCeServidorVcl\config\Config.Service.Interfaces.pas"/>
+        <DCCReference Include="..\EmissorNFCeServidorVcl\nfce\NFCe.DTO.pas"/>
+        <DCCReference Include="..\EmissorNFCeServidorVcl\nfce\NFCe.Service.Interfaces.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -133,7 +133,7 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">NuvemFiscalClienteVcl.dpr</Source>
+                    <Source Name="MainSource">EmissorNFCeClienteVcl.dpr</Source>
                 </Source>
                 <Excluded_Packages>
                     <Excluded_Packages Name="C:\_#Componentes#_\ACBr\Lib\Delphi\LibD26\ACBr_TCP.bpl">ACBr - Socket, CEP, TCP, IBGE, CNIEE, Suframa, Download, FTP, HTTP, NFPws, IBPTax, CNPJ, CPF, Cotação, E-mail, Feriado - (http://www.projectoacbr.com.br/)</Excluded_Packages>
@@ -143,9 +143,9 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\NuvemFiscalClienteVcl.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Win32\Debug\EmissorNFCeClienteVcl.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>NuvemFiscalClienteVcl.exe</RemoteName>
+                        <RemoteName>EmissorNFCeClienteVcl.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

@@ -1,7 +1,7 @@
 object ServerMainForm: TServerMainForm
   Left = 0
   Top = 0
-  Caption = 'Nuvem Fiscal Servidor Vcl'
+  Caption = 'Emissor NFCe - Servidor Vcl'
   ClientHeight = 242
   ClientWidth = 609
   Color = clBtnFace
