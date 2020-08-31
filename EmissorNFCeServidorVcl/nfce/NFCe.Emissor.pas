@@ -710,6 +710,7 @@ var
   NFeConsulta: TNFeConsulta;
   Evento: TRetEventoNFeCollectionItem;
   ProtocoloEvento: TProtocoloEventoNFeDTO;
+  I: integer;
 begin
   Result := TRetornoConsultaNFCeDTO.Create;
   try
@@ -750,8 +751,10 @@ begin
       end;
     end;
 
-    for Evento in NFeConsulta.procEventoNFe do
+    for I := 0 to NFeConsulta.procEventoNFe.Count - 1 do
     begin
+      Evento := NFeConsulta.procEventoNFe[I];
+
       ProtocoloEvento := TProtocoloEventoNFeDTO.Create;
       ProtocoloEvento.evento := TEventoNFeDTO.Create;
       ProtocoloEvento.retEvento := TRetornoEventoNFeDTO.Create;
