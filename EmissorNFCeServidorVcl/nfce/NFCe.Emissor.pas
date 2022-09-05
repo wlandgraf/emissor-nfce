@@ -18,7 +18,7 @@ uses
   ACBrNFeConfiguracoes,
   ACBrNFeNotasFiscais,
   ACBrLibXml2,
-  ACBrUtil,
+  ACBrUtil.Strings,
 
   ACBrDFeReport,
   ACBrDFeDANFeReport,

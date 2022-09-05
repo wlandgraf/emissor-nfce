@@ -78,7 +78,7 @@ begin
   try
     Token.Claims.IssuedAt := edtIssuedAtDate.Date + edtIssuedAtTime.Time;
     Token.Claims.Expiration := edtExpiresDate.Date + edtExpiresTime.Time;
-    Result := TJOSE.SerializeCompact(JWK, TJWAEnum.HS256, Token);
+    Result := TJOSE.SerializeCompact(JWK, TJOSEAlgorithmId.HS256, Token);
   finally
     JWK.Free;
     Token.Free;
